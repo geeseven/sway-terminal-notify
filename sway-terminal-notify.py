@@ -45,7 +45,9 @@ if not container.focused:
         termial = "terminal"
 
     init("sway-terminal-notify")
-    n = Notification("{} finished".format(termial),
-                     "on workspace {}".format(container.workspace().name),
-                     "/usr/share/icons/breeze/apps/48/utilities-terminal.svg")
+    n = Notification(
+        "{} finished".format(termial),
+        "on workspace {}".format(container.workspace().name),
+        "/usr/share/icons/breeze/apps/48/utilities-terminal.svg",
+    )
     n.show()
