@@ -1,4 +1,4 @@
-## Sway terminal notify
+# Sway terminal notify
 
 Need an indication that some long running command finishes when the terminal no longer has focus?  In i3, I use the terminal's visual bell feature along with adding '\a' to `PS1` to mark the terminal as urgent.  In Sway, I had come up with this workaround as [Wayland does not yet support urgency hints][00].
 
