@@ -6,7 +6,7 @@ from psutil import Process
 # This script only works with 'real' local terminals within Sway.
 # We need to gracefully exit if using ssh, local console or a multiplexer.
 
-multiplexers = ('tmux: server', 'screen')
+multiplexers = ("tmux: server", "screen")
 
 # determine if we can connect to ipc and get status
 try:
@@ -16,7 +16,7 @@ except Exception:
     exit()
 
 # verify if running Sway
-if 'sway' not in i3.socket_path:
+if "sway" not in i3.socket_path:
     exit()
 
 p = Process()
@@ -42,10 +42,10 @@ if not container.focused:
         termial = container.window_instance
     # pretty sure this fallback is unneeded but leaving this for now
     else:
-        termial = 'terminal'
+        termial = "terminal"
 
-    init('sway-terminal-notify')
-    n = Notification('{} finished'.format(termial),
-                     'on workspace {}'.format(container.workspace().name),
-                     '/usr/share/icons/breeze/apps/48/utilities-terminal.svg')
+    init("sway-terminal-notify")
+    n = Notification("{} finished".format(termial),
+                     "on workspace {}".format(container.workspace().name),
+                     "/usr/share/icons/breeze/apps/48/utilities-terminal.svg")
     n.show()
