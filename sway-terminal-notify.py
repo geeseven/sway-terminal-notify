@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from i3ipc import Connection
-from notify2 import init, Notification
+from notify2 import Notification, init
 from psutil import Process
 
 # This script only works with 'real' local terminals within Sway.
