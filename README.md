@@ -16,7 +16,7 @@ background-color=#000000
 text-color=#00ff00
 ```
 
-This workaround does not work with terminal multiplexers or ssh.  I prefer urgent windows to notifications for this reason and visually is cleaner.  To me, this looks better:
+This workaround does not work with terminal multiplexers or ssh.  (see [Sway tmux notify][4] for tmux notifications.) I prefer urgent windows to notifications for this reason and visually is cleaner.  To me, this looks better:
 
 ![urgent](https://i.imgur.com/zs9t7Fu.png)
 
@@ -24,10 +24,11 @@ Than this:
 
 ![notification](https://i.imgur.com/R5qKOVu.png)
 
-I attempted to recreate a notification that would be just a small red box with the workspace number that would go over the workspace number in the status bar.  It appears that Sway or mako won't allow notifications to appear over the status bar.  
+I attempted to recreate a notification that would be just a small red box with the workspace number that would go over the workspace number in the status bar.  It appears that Sway or mako won't allow notifications to appear over the status bar.
 
 [00]: https://gitlab.freedesktop.org/wayland/wayland-protocols/-/merge_requests/9
 [0]: https://pypi.org/project/i3ipc
 [1]: https://pypi.python.org/pypi/notify2
 [2]: https://pypi.org/project/psutil
 [3]: https://github.com/emersion/mako
+[4]: https://gist.github.com/geeseven/6cceb3880a52081946416ba7f7ea24d7
